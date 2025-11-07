@@ -7,3 +7,5 @@ intBarco3 = 3
 intBarco2 = 2
 intBarco1 = 1
 intNumBarcos = 10
+intQuien = 0
+bolSeguirJugando = True
