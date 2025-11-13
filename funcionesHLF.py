@@ -134,6 +134,7 @@ def jugadaMia(lstTablero, contDisparos, bolSeguirJugando, intQuien):
 
 # Mientras la condicion sea cierta seguimos jugando
     while bolSeguir:
+        time.sleep(0.1)
         # Dependiendo quien este jugando intQuien tendra un avlor u otro
         # 0 Jugador
         # 1 maquina
@@ -186,8 +187,11 @@ def jugadaMia(lstTablero, contDisparos, bolSeguirJugando, intQuien):
                 bolSeguir = True  
                 
         # Pintamos el resultado de la jugada
-        print("Tablero Actual")
-        print("-------------")
+        if intQuien == 0:
+            print("Pintamos el resultado tu jugada")
+        else:
+            print("Pintamos el resultado de la jugada")
+        print("------------------------------------")
         pintarTablero(lstTablero)
         print("")
 
